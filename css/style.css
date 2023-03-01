@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
 
-/* variables */
+/* variables and main */
 :root {
     --main-color: hsl(4, 80%, 60%);
 
@@ -94,8 +94,124 @@ button {
     background-color: var(--main-black);
 }
 
+.page-wrapper {
+    overflow: hidden;
+}
 
+.container {
+    max-width: var(--container);
+    margin: auto;
+    padding: 0 15px;
+}
 
+.line {
+    height: 1px;
+    background-color: var(--border-color);
+    width: 100%;
+    display: block;
+}
+
+/* end variables and main */
+
+/* header */
+.logo {
+    width: 110px;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 2;
+}
+
+.header__toggler {
+    width: 60px;
+    color: var(--text-x-light-gray);
+    font-size: var(--fs-body);
+    font-weight: 500;
+    text-transform: capitalize;
+    z-index: 11;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.header__toggler.active .header__toggler-text {
+    transform: translateY(-100%);
+}
+
+.header__toggler-text {
+    position: relative;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.header__toggler-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-black-alpha-95);
+    z-index: 10;
+    display: flex;
+    overflow-y: auto;
+    transition: all 0.6s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header__nav.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header__list {
+    margin: auto;
+    padding: 80px 15px;
+    max-width: var(--container);
+    width: 100%;
+}
+
+.header__link {
+    color: var(--text-x-light-gray);
+    display: block;
+    font-size: var(--fs-3xl);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    line-height: 1;
+}
+
+.header__line {
+    transition: all 1s ease;
+    transform: scale(0, 1);
+    transform-origin: left;
+}
+
+.header__nav.open .header__line {
+    transform: scale(1);
+}
+
+/* end header */
 
 
 
