@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+/* variables */
+:root {
+    --main-color: hsl(4, 80%, 60%);
+
+    --text-light-gray: hsl(0, 0%, 75%);
+    --text-x-light-gray: hsl(0, 0%, 90%);
+
+    --bg-black: hsl(0, 0%, 0%);
+    --bg-black-alpha-70: hsla(0, 0%, 0%, 0.7);
+    --bg-black-alpha-95: hsla(0, 0%, 0%, 0.95);
+
+    --border-color: hsla(0, 0%, 100%, 0.3);
+
+    --container: 1170px;
+
+    --fs-sm: 16px;
+    --fs-md: 20px;
+    --fs-lg: 23px;
+    --fs-xl: 26px;
+    --fs-2xl: 32px;
+    --fs-3xl: clamp(35px, 5vw, 60px);
+    --fs-body: var(--fs-md);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    font-style: var(--fs-body);
+    line-height: 1.5;
+    color: var(--text-light-gray);
+    background-color: var(--bg-black);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--text-x-light-gray);
+    line-height: 1.3;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+::selection {
+    color: var(--text-x-light-gray);
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
