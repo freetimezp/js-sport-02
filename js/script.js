@@ -22,3 +22,40 @@ function nav() {
 };
 
 nav();
+
+/* video popup */
+
+function video() {
+    const btns = ['.js-video-popup-close', '.js-about-play-btn'];
+    const popup = document.querySelector(".js-video-popup");
+    const iframe = popup.querySelector(".js-video-popup-iframe");
+    const src = iframe.src;
+
+    btns.forEach((btn) => {
+        document.querySelector(btn).addEventListener("click", () => {
+            if(popup.classList.contains("open")) {
+                popup.classList.remove("open");
+                iframe.src = "";
+            }else{
+                popup.classList.add("open");
+                if(iframe.getAttribute("src") == "") {
+                    iframe.src = src;
+                }
+            }
+        });
+    });
+};
+
+video();
+
+
+
+
+
+
+
+
+
+
+
+

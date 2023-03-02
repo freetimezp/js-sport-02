@@ -85,7 +85,7 @@
         <div class="img-cover"></div>
         <div class="img-cover"></div>
         <div class="about__play-btn-wrap">
-          <button class="about__play-btn js-about-play-btn">
+          <button type="button" class="about__play-btn js-about-play-btn">
             <i class="fa fa-play"></i>
           </button>
         </div>
@@ -111,6 +111,19 @@
   </section>
   <!-- about end -->
 
+  <!-- video popup -->
+  <div class="video-popup js-video-popup">
+    <div class="video-popup__inner">
+      <button type="button" class="video-popup__close js-video-popup-close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="video-popup__iframe-box">
+        <iframe class="video-popup__iframe js-video-popup-iframe" src="https://www.youtube.com/embed/TJ3H6v0MOTk" 
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- video popup end -->
 </div>
 
 <script src="js/aos.js"></script>

@@ -161,6 +161,62 @@ body.t-img-gray img:not(.logo) {
     text-transform: capitalize;
 }
 
+.video-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 15px;
+    z-index: 11;
+    background-color: var(--bg-black-alpha-70);
+    display: flex;
+    transition: all 0.5s ease;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video-popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.video-popup__inner {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+.video-popup__iframe-box {
+    padding-top: 56.25%;
+}
+
+.video-popup__iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: var(--bg-black);
+}
+
+.video-popup__close {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-x-light-gray);
+    background-color: transparent;
+    border: none;
+    font-size: var(--fs-body);
+}
+
 /* end variables and main */
 
 /* header */
