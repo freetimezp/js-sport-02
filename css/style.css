@@ -450,7 +450,74 @@ body.t-img-gray img:not(.logo) {
 
 /* about end */
 
+/* services */
 
+.services {
+    padding: 70px 0;
+}
+
+.services__section-header {
+    margin-bottom: 50px;
+}
+
+/* services end */
+
+/* accordion */
+
+.accordion__btn {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.accordion__title {
+    text-transform: capitalize;
+    font-size: var(--fs-xl);
+    color: var(--text-x-light-gray);
+    font-weight: 500;
+    transition: all 1s ease;
+    align-self: center;
+}
+
+.accordion__item.active .accordion__title,
+.accordion__btn:hover .accordion__title {
+    color: var(--main-color);
+}
+
+.accordion__icon {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    color: var(--main-color);
+    border: 1px solid;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-sm);
+}
+
+.accordion__item.active .accordion__icon {
+    transform: rotate(90deg);
+}
+
+.accordion__body {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.accordion__body-inner {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+}
+
+/* accordion end */
 
 
 
