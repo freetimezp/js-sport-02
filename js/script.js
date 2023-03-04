@@ -1,8 +1,13 @@
 /* aos */
 window.addEventListener("load", () => {
-    AOS.init({
-        once: true,
-        duration: 2000,
+    document.querySelector(".js-preloader").classList.add("loaded");
+    document.querySelector(".js-preloader-slide").addEventListener("animationend", () => {
+        document.querySelector(".js-preloader").style.display = "none";
+
+        AOS.init({
+            once: true,
+            duration: 2000,
+        });
     });
 });
 
