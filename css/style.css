@@ -117,7 +117,11 @@ button {
     height: 100%;
     width: 100%;
     background-color: var(--bg-black);
-    display: none;
+    /* display: none; */
+}
+
+.img-cover[data-aos="slide-right"] {
+    left: 100%;
 }
 
 .img-cover:nth-of-type(2) {
@@ -914,3 +918,21 @@ body.t-img-gray img:not(.logo) {
 }
 
 /* media end */
+
+/* aos */
+
+[data-aos=fade-up] {
+    transform: translate3d(0, 70%, 0);
+}
+[data-aos=scale-x-right] {
+    transform: scale(0, 1);
+    transform-origin: left;
+}
+[data-aos=scale-x-right].aos-animate {
+    transform: scale(1);
+}
+
+
+/* aos end */
+
+

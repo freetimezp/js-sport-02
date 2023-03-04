@@ -1,3 +1,11 @@
+/* aos */
+window.addEventListener("load", () => {
+    AOS.init({
+        once: true,
+        duration: 2000,
+    });
+});
+
 /* nav toggle */
 function nav() {
     const navToggler = document.querySelector(".js-header-toggler");
